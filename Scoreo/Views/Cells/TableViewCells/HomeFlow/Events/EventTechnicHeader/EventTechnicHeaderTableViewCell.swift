@@ -8,12 +8,14 @@
 import UIKit
 
 class EventTechnicHeaderTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var fixedTechniq: UILabel!
+    
     @IBOutlet weak var lblAway: UILabel!
     @IBOutlet weak var lblHome: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        fixedTechniq.text = "Technic".localized
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

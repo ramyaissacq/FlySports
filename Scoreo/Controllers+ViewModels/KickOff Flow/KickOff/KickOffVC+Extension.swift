@@ -42,7 +42,6 @@ extension KickOffViewController:UISearchBarDelegate{
         else{
             
             self.viewModel.liveMatches = self.viewModel.OriginalLiveMatches
-            self.viewModel.soonMatches = self.viewModel.OriginalSoonMatches
             
             prepareViews()
             
@@ -52,10 +51,8 @@ extension KickOffViewController:UISearchBarDelegate{
     
     
     func doSearch(searchText:String){
-            var originals = viewModel.OriginalLiveMatches
+        let originals = viewModel.OriginalLiveMatches
         self.viewModel.liveMatches = originals?.filter{($0.leagueName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.leagueNameShort?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.homeName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.awayName?.lowercased().contains(searchText.lowercased()) ?? false)}
-        originals = viewModel.OriginalSoonMatches
-        self.viewModel.soonMatches = originals?.filter{($0.leagueName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.leagueNameShort?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.homeName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.awayName?.lowercased().contains(searchText.lowercased()) ?? false)}
         
         prepareViews()
         
@@ -75,7 +72,6 @@ extension KickOffViewController:UISearchBarDelegate{
         searchBar.text = ""
         searchBar.endEditing(true)
         self.viewModel.liveMatches = self.viewModel.OriginalLiveMatches
-        self.viewModel.soonMatches = self.viewModel.OriginalSoonMatches
         prepareViews()
     }
     

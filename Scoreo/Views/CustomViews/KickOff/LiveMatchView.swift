@@ -16,7 +16,7 @@ class LiveMatchView:UIView{
     @IBOutlet weak var imgHomeLogo: UIImageView!
     @IBOutlet weak var imgAwayLogo: UIImageView!
     @IBOutlet weak var lblTime: UILabel!
-    @IBOutlet weak var fixedLive: UILabel!
+    @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var backView: UIView!
     
     override init(frame: CGRect) {
@@ -33,7 +33,7 @@ class LiveMatchView:UIView{
        func commonInit() {
            Bundle.main.loadNibNamed("LiveMatchView", owner: self, options: nil)
            contentView.fixInView(self)
-           fixedLive.text = "LIVE".localized
+           
        }
     
     override func layoutSubviews() {
@@ -41,32 +41,21 @@ class LiveMatchView:UIView{
     }
     
     func configureCell(obj:MatchList?){
-        if KickOffViewController.urlDetails?.mapping?.count ?? 0 == 0{
-            lblName.text = ""
-        }
-        else{
+//        if KickOffViewController.urlDetails?.mapping?.count ?? 0 == 0{
+//            lblName.text = ""
+//        }
+//        else{
+//        lblName.text = obj?.leagueNameShort
+//        }
         lblName.text = obj?.leagueNameShort
-        }
         lblHomeName.text = obj?.homeName
         lblAwayName.text = obj?.awayName
-        let mins = ScoresTableViewCell.timeInMins(startDate: obj?.startTime ?? "")
-        lblTime.text = "\(mins)'"
+        let matchDate = Utility.getSystemTimeZoneTime(dateString: obj?.matchTime ?? "")
+        lblTime.text = Utility.formatDate(date: matchDate, with: .hhmm2)
 
-        if obj?.state == 0 || obj?.state == -1{
-            let matchDate = Utility.getSystemTimeZoneTime(dateString: obj?.matchTime ?? "")
-            lblTime.text = Utility.formatDate(date: matchDate, with: .hhmm2)
-            
-        }
-        
-        if obj?.state == 0{
-            fixedLive.text = "Soon".localized
-        }
-        else{
-            fixedLive.text = "LIVE".localized
-        }
-        
         imgAwayLogo.setImage(with: obj?.awayLogo, placeholder: Utility.getPlaceHolder())
         imgHomeLogo.setImage(with: obj?.homeLogo, placeholder: Utility.getPlaceHolder())
+        lblScore.text = "\(obj?.homeScore ?? 0) : \(obj?.awayScore ?? 0)"
     }
     
 }

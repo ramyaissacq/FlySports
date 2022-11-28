@@ -10,7 +10,7 @@ import UIKit
 class EventsAwayTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblEvent: UILabel!
-    @IBOutlet weak var imgType: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblTime: UILabel!
     
     override func awakeFromNib() {
@@ -42,9 +42,10 @@ class EventsAwayTableViewCell: UITableViewCell {
             
         
         }
-        lblEvent.text = "\(name) (\(EventsHomeTableViewCell.getType(kind: obj?.kind ?? 0)))"
+        lblEvent.text = EventsHomeTableViewCell.getType(kind: obj?.kind ?? 0)
+        lblName.text = name
         lblTime.text = obj?.time
-        imgType.image = EventsHomeTableViewCell.getEventSectionImage(index: index)
+        
     }
     
 }

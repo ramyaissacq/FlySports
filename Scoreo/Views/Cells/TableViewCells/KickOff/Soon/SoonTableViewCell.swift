@@ -14,7 +14,7 @@ class SoonTableViewCell: UITableViewCell {
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblHomeName: UILabel!
     @IBOutlet weak var lblAwayName: UILabel!
-    @IBOutlet weak var lblTime: UILabel!
+    @IBOutlet weak var lblScore: UILabel!
     @IBOutlet weak var imgHomeLogo: UIImageView!
     @IBOutlet weak var imgAwayLogo: UIImageView!
     @IBOutlet weak var lblDate: UILabel!
@@ -25,8 +25,8 @@ class SoonTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-      backView1.roundCorners(corners: [.topRight], radius: 25)
-        backView2.roundCorners(corners: [.bottomRight], radius: 25)
+     // backView1.roundCorners(corners: [.topRight], radius: 25)
+       // backView2.roundCorners(corners: [.bottomRight], radius: 25)
         
     }
 
@@ -38,12 +38,13 @@ class SoonTableViewCell: UITableViewCell {
     
     func configureCell(obj:MatchList?){
         
-        if KickOffViewController.urlDetails?.mapping?.count ?? 0 == 0{
-            lblName.text = ""
-        }
-        else{
+//        if KickOffViewController.urlDetails?.mapping?.count ?? 0 == 0{
+//            lblName.text = ""
+//        }
+//        else{
+//        lblName.text = obj?.leagueNameShort
+//        }
         lblName.text = obj?.leagueNameShort
-        }
         
         lblHomeName.text = obj?.homeName
         lblAwayName.text = obj?.awayName
@@ -51,8 +52,8 @@ class SoonTableViewCell: UITableViewCell {
         imgHomeLogo.setImage(with: obj?.homeLogo, placeholder: Utility.getPlaceHolder())
         
             let matchDate = Utility.getSystemTimeZoneTime(dateString: obj?.matchTime ?? "")
-            lblTime.text = Utility.formatDate(date: matchDate, with: .hhmm2)
-        lblDate.text = Utility.formatDate(date: matchDate, with: .ddmmm)
+        lblScore.text = "\(obj?.homeScore ?? 0) : \(obj?.awayScore ?? 0)"
+        lblDate.text = Utility.formatDate(date: matchDate, with: .hhmm2)
     }
     
 }

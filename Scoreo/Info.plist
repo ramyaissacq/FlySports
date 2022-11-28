@@ -9,8 +9,10 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Prompt-Regular.ttf</string>
-		<string>Prompt-Bold.ttf</string>
+		<string>Oswald-SemiBold.ttf</string>
+		<string>Oswald-Regular.ttf</string>
+		<string>Oswald-Medium.ttf</string>
+		<string>Oswald-Bold.ttf</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

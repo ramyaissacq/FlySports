@@ -8,8 +8,8 @@
 import UIKit
 
 class EventsHomeTableViewCell: UITableViewCell {
+    @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblEvent: UILabel!
-    @IBOutlet weak var imgType: UIImageView!
     @IBOutlet weak var lblTime: UILabel!
 
     override func awakeFromNib() {
@@ -41,9 +41,10 @@ class EventsHomeTableViewCell: UITableViewCell {
             break
         
         }
-        lblEvent.text = "\(name) (\(EventsHomeTableViewCell.getType(kind: obj?.kind ?? 0)))"
+        lblEvent.text = EventsHomeTableViewCell.getType(kind: obj?.kind ?? 0)
+        lblName.text = name
         lblTime.text = obj?.time
-        imgType.image = EventsHomeTableViewCell.getEventSectionImage(index: index)
+        
     }
     
     static func getEventSectionImage(index:Int)->UIImage?{

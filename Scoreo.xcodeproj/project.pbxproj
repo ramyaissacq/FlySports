@@ -11,6 +11,13 @@
 		43926B849DE9A294E3DE67B6 /* Pods_ScoreoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8B26FE0E42C73FA1D947105 /* Pods_ScoreoTests.framework */; };
 		66A3790CD43A842D961A2B81 /* Pods_Scoreo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB615188F3FE95D26030686 /* Pods_Scoreo.framework */; };
 		AD11E967291256160009D883 /* football.json in Resources */ = {isa = PBXBuildFile; fileRef = AD11E966291256160009D883 /* football.json */; };
+		AD1567562930DF250085C098 /* SoonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1567552930DF250085C098 /* SoonTableViewCell.xib */; };
+		AD15675D2930E6F50085C098 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD1567572930E6F50085C098 /* Oswald-Light.ttf */; };
+		AD15675E2930E6F50085C098 /* Oswald-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD1567582930E6F50085C098 /* Oswald-ExtraLight.ttf */; };
+		AD15675F2930E6F50085C098 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD1567592930E6F50085C098 /* Oswald-Regular.ttf */; };
+		AD1567602930E6F50085C098 /* Oswald-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD15675A2930E6F50085C098 /* Oswald-SemiBold.ttf */; };
+		AD1567612930E6F50085C098 /* Oswald-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD15675B2930E6F50085C098 /* Oswald-Bold.ttf */; };
+		AD1567622930E6F50085C098 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD15675C2930E6F50085C098 /* Oswald-Medium.ttf */; };
 		AD2799F0291A339E00481D8D /* KickOffVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2799EF291A339E00481D8D /* KickOffVC+Extension.swift */; };
 		AD2799F4291A705F00481D8D /* EmptySoonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2799F2291A705F00481D8D /* EmptySoonTableViewCell.swift */; };
 		AD2799F5291A705F00481D8D /* EmptySoonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2799F3291A705F00481D8D /* EmptySoonTableViewCell.xib */; };
@@ -268,7 +275,6 @@
 		AD6DAEEE2909208C00CACBCF /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DAEEC2909208C00CACBCF /* MatchCollectionViewCell.swift */; };
 		AD6DAEEF2909208C00CACBCF /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6DAEED2909208C00CACBCF /* MatchCollectionViewCell.xib */; };
 		AD6DAEF1290955CF00CACBCF /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DAEF0290955CF00CACBCF /* RoundView.swift */; };
-		AD7AE7FB291E3A1A0096D9BE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7AE7FA291E3A1A0096D9BE /* ProfileViewController.swift */; };
 		AD7AE7FF291E71DC0096D9BE /* SlideshowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7AE7FD291E71DC0096D9BE /* SlideshowTableViewCell.swift */; };
 		AD7AE800291E71DC0096D9BE /* SlideshowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7AE7FE291E71DC0096D9BE /* SlideshowTableViewCell.xib */; };
 		AD8228E5290BC3180057A09D /* SportsSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8228E3290BC3180057A09D /* SportsSelectionTableViewCell.swift */; };
@@ -279,7 +285,6 @@
 		AD8B261A2918D8FB004CB036 /* KickOff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8B26192918D8FB004CB036 /* KickOff.storyboard */; };
 		AD8B261D2918DDF4004CB036 /* KickOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B261C2918DDF4004CB036 /* KickOffViewController.swift */; };
 		AD8B26212918F426004CB036 /* SoonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B261F2918F426004CB036 /* SoonTableViewCell.swift */; };
-		AD8B26222918F426004CB036 /* SoonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD8B26202918F426004CB036 /* SoonTableViewCell.xib */; };
 		AD8D6F0429096A880084FDEF /* LatestNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D6F0229096A880084FDEF /* LatestNewsCollectionViewCell.swift */; };
 		AD8D6F0529096A880084FDEF /* LatestNewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD8D6F0329096A880084FDEF /* LatestNewsCollectionViewCell.xib */; };
 		AD95D6D7290CFB5800652CFF /* ScheduledMatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95D6D5290CFB5800652CFF /* ScheduledMatchCollectionViewCell.swift */; };
@@ -291,11 +296,6 @@
 		AD95D6E3290D5DA300652CFF /* LeaguePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD95D6E2290D5DA300652CFF /* LeaguePopupViewController.swift */; };
 		ADB02A76291670D10042915B /* KickOffSelectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB02A74291670D10042915B /* KickOffSelectionCollectionViewCell.swift */; };
 		ADB02A77291670D10042915B /* KickOffSelectionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A75291670D10042915B /* KickOffSelectionCollectionViewCell.xib */; };
-		ADB02A7C2916730B0042915B /* Prompt-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A782916730B0042915B /* Prompt-Black.ttf */; };
-		ADB02A7D2916730B0042915B /* Prompt-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A792916730B0042915B /* Prompt-Medium.ttf */; };
-		ADB02A7E2916730B0042915B /* Prompt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A7A2916730B0042915B /* Prompt-Regular.ttf */; };
-		ADB02A7F2916730B0042915B /* Prompt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A7B2916730B0042915B /* Prompt-Bold.ttf */; };
-		ADB02A81291675390042915B /* Prompt-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A80291675390042915B /* Prompt-SemiBold.ttf */; };
 		ADB02A85291686910042915B /* LiveMatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB02A83291686910042915B /* LiveMatchCollectionViewCell.swift */; };
 		ADB02A86291686910042915B /* LiveMatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB02A84291686910042915B /* LiveMatchCollectionViewCell.xib */; };
 		ADB02A8A29169BA70042915B /* SoonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB02A8829169BA70042915B /* SoonCollectionViewCell.swift */; };
@@ -349,6 +349,13 @@
 		85CE495B9B07175EB5F40969 /* Pods-ScoreoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreoTests.debug.xcconfig"; path = "Target Support Files/Pods-ScoreoTests/Pods-ScoreoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8B26FE0E42C73FA1D947105 /* Pods_ScoreoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoreoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD11E966291256160009D883 /* football.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = football.json; sourceTree = "<group>"; };
+		AD1567552930DF250085C098 /* SoonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoonTableViewCell.xib; sourceTree = "<group>"; };
+		AD1567572930E6F50085C098 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		AD1567582930E6F50085C098 /* Oswald-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-ExtraLight.ttf"; sourceTree = "<group>"; };
+		AD1567592930E6F50085C098 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
+		AD15675A2930E6F50085C098 /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD15675B2930E6F50085C098 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Bold.ttf"; sourceTree = "<group>"; };
+		AD15675C2930E6F50085C098 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
 		AD2799EF291A339E00481D8D /* KickOffVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KickOffVC+Extension.swift"; sourceTree = "<group>"; };
 		AD2799F2291A705F00481D8D /* EmptySoonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySoonTableViewCell.swift; sourceTree = "<group>"; };
 		AD2799F3291A705F00481D8D /* EmptySoonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptySoonTableViewCell.xib; sourceTree = "<group>"; };
@@ -634,7 +641,6 @@
 		AD6DAEEC2909208C00CACBCF /* MatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD6DAEED2909208C00CACBCF /* MatchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchCollectionViewCell.xib; sourceTree = "<group>"; };
 		AD6DAEF0290955CF00CACBCF /* RoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
-		AD7AE7FA291E3A1A0096D9BE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AD7AE7FD291E71DC0096D9BE /* SlideshowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowTableViewCell.swift; sourceTree = "<group>"; };
 		AD7AE7FE291E71DC0096D9BE /* SlideshowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideshowTableViewCell.xib; sourceTree = "<group>"; };
 		AD8228E3290BC3180057A09D /* SportsSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsSelectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -646,7 +652,6 @@
 		AD8B26192918D8FB004CB036 /* KickOff.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KickOff.storyboard; sourceTree = "<group>"; };
 		AD8B261C2918DDF4004CB036 /* KickOffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickOffViewController.swift; sourceTree = "<group>"; };
 		AD8B261F2918F426004CB036 /* SoonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoonTableViewCell.swift; sourceTree = "<group>"; };
-		AD8B26202918F426004CB036 /* SoonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoonTableViewCell.xib; sourceTree = "<group>"; };
 		AD8D6F0229096A880084FDEF /* LatestNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD8D6F0329096A880084FDEF /* LatestNewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LatestNewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		AD8FC2810333C212165D9AFB /* Pods_Scoreo_ScoreoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scoreo_ScoreoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -659,11 +664,6 @@
 		AD95D6E2290D5DA300652CFF /* LeaguePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguePopupViewController.swift; sourceTree = "<group>"; };
 		ADB02A74291670D10042915B /* KickOffSelectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickOffSelectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADB02A75291670D10042915B /* KickOffSelectionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KickOffSelectionCollectionViewCell.xib; sourceTree = "<group>"; };
-		ADB02A782916730B0042915B /* Prompt-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Black.ttf"; sourceTree = "<group>"; };
-		ADB02A792916730B0042915B /* Prompt-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Medium.ttf"; sourceTree = "<group>"; };
-		ADB02A7A2916730B0042915B /* Prompt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Regular.ttf"; sourceTree = "<group>"; };
-		ADB02A7B2916730B0042915B /* Prompt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-Bold.ttf"; sourceTree = "<group>"; };
-		ADB02A80291675390042915B /* Prompt-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prompt-SemiBold.ttf"; sourceTree = "<group>"; };
 		ADB02A83291686910042915B /* LiveMatchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADB02A84291686910042915B /* LiveMatchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveMatchCollectionViewCell.xib; sourceTree = "<group>"; };
 		ADB02A8829169BA70042915B /* SoonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoonCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -1991,11 +1991,12 @@
 		AD62DD7528F6A74500730317 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				ADB02A782916730B0042915B /* Prompt-Black.ttf */,
-				ADB02A7B2916730B0042915B /* Prompt-Bold.ttf */,
-				ADB02A80291675390042915B /* Prompt-SemiBold.ttf */,
-				ADB02A792916730B0042915B /* Prompt-Medium.ttf */,
-				ADB02A7A2916730B0042915B /* Prompt-Regular.ttf */,
+				AD15675B2930E6F50085C098 /* Oswald-Bold.ttf */,
+				AD1567582930E6F50085C098 /* Oswald-ExtraLight.ttf */,
+				AD1567572930E6F50085C098 /* Oswald-Light.ttf */,
+				AD15675C2930E6F50085C098 /* Oswald-Medium.ttf */,
+				AD1567592930E6F50085C098 /* Oswald-Regular.ttf */,
+				AD15675A2930E6F50085C098 /* Oswald-SemiBold.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -2037,14 +2038,6 @@
 			path = Match;
 			sourceTree = "<group>";
 		};
-		AD7AE7F9291E39C40096D9BE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				AD7AE7FA291E3A1A0096D9BE /* ProfileViewController.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		AD7AE7FC291E71B60096D9BE /* banner */ = {
 			isa = PBXGroup;
 			children = (
@@ -2078,7 +2071,6 @@
 		AD8B261B2918DDCF004CB036 /* KickOff Flow */ = {
 			isa = PBXGroup;
 			children = (
-				AD7AE7F9291E39C40096D9BE /* Profile */,
 				AD2D173A291B9B6300A44829 /* Linup */,
 				AD64C36A291918330061943C /* KickOff */,
 			);
@@ -2088,8 +2080,8 @@
 		AD8B261E2918E268004CB036 /* Soon */ = {
 			isa = PBXGroup;
 			children = (
+				AD1567552930DF250085C098 /* SoonTableViewCell.xib */,
 				AD8B261F2918F426004CB036 /* SoonTableViewCell.swift */,
-				AD8B26202918F426004CB036 /* SoonTableViewCell.xib */,
 			);
 			path = Soon;
 			sourceTree = "<group>";
@@ -2350,18 +2342,14 @@
 				AD64C371291922C10061943C /* SectionHeaderTableViewCell.xib in Resources */,
 				AD62DCCC28F6A09500730317 /* VideoHeighlightsCollectionViewCell.xib in Resources */,
 				AD62DCAC28F6A09500730317 /* LeagueHeaderTableViewCell.xib in Resources */,
-				AD8B26222918F426004CB036 /* SoonTableViewCell.xib in Resources */,
 				AD62DCC228F6A09500730317 /* PointsCollectionViewCell.xib in Resources */,
-				ADB02A7E2916730B0042915B /* Prompt-Regular.ttf in Resources */,
 				AD2D1746291BE43800A44829 /* BenchTableViewCell.xib in Resources */,
 				AD62DC8D28F6A09500730317 /* SideMenu.storyboard in Resources */,
 				AD62DC8928F6A09500730317 /* Forum.storyboard in Resources */,
 				AD62DC8E28F6A09500730317 /* News.storyboard in Resources */,
-				ADB02A7D2916730B0042915B /* Prompt-Medium.ttf in Resources */,
 				AD62DC8B28F6A09500730317 /* Home.storyboard in Resources */,
 				AD62DCDB28F6A09500730317 /* Dialogs.storyboard in Resources */,
 				AD62DC8428F6A09500730317 /* Awards.strings in Resources */,
-				ADB02A81291675390042915B /* Prompt-SemiBold.ttf in Resources */,
 				AD82781B29138989005D6AF4 /* InfoPlist.strings in Resources */,
 				AD62DC8528F6A09500730317 /* Home.strings in Resources */,
 				AD62DC9528F6A09500730317 /* LanguageTableViewCell.xib in Resources */,
@@ -2380,29 +2368,33 @@
 				AD62DCA728F6A09500730317 /* AnalysisHeaderTableViewCell.xib in Resources */,
 				AD62DCAF28F6A09500730317 /* LoaderTableViewCell.xib in Resources */,
 				AD62DCD928F6A09500730317 /* Dialogs.strings in Resources */,
+				AD1567602930E6F50085C098 /* Oswald-SemiBold.ttf in Resources */,
 				ADB02A8B29169BA70042915B /* SoonCollectionViewCell.xib in Resources */,
 				AD62DC8628F6A09500730317 /* News.strings in Resources */,
 				AD62DD7428F6A33400730317 /* Assets.xcassets in Resources */,
-				ADB02A7C2916730B0042915B /* Prompt-Black.ttf in Resources */,
+				AD15675E2930E6F50085C098 /* Oswald-ExtraLight.ttf in Resources */,
 				AD62DCBB28F6A09500730317 /* MoreCollectionViewCell.xib in Resources */,
-				ADB02A7F2916730B0042915B /* Prompt-Bold.ttf in Resources */,
 				AD62DCAA28F6A09500730317 /* ScoresTableViewCell.xib in Resources */,
 				AD62DC8728F6A09500730317 /* Main.strings in Resources */,
 				AD8228E6290BC3180057A09D /* SportsSelectionTableViewCell.xib in Resources */,
 				AD62DCD028F6A09500730317 /* OddsCollectionViewCell.xib in Resources */,
 				AD62DC9128F6A09500730317 /* StandingsTableViewCell.xib in Resources */,
 				AD95D6E1290D5A0400652CFF /* LeaguePopupTableViewCell.xib in Resources */,
+				AD1567622930E6F50085C098 /* Oswald-Medium.ttf in Resources */,
 				AD62DD6E28F6A1D500730317 /* loading.json in Resources */,
 				AD62DCB728F6A09500730317 /* EventsHomeTableViewCell.xib in Resources */,
 				AD62DCD628F6A09500730317 /* OnboardingCollectionViewCell.xib in Resources */,
 				AD62DC9A28F6A09500730317 /* NewsTableViewCell.xib in Resources */,
+				AD15675D2930E6F50085C098 /* Oswald-Light.ttf in Resources */,
 				AD62DCD428F6A09500730317 /* RoundSelectionCollectionViewCell.xib in Resources */,
 				AD62DCD128F6A09500730317 /* HighlightsCollectionViewCell.xib in Resources */,
 				AD64C3692919148A0061943C /* LiveMatchesTableViewCell.xib in Resources */,
 				ADDFA4A928FAA36E00CCF764 /* SportsView.xib in Resources */,
 				AD62DAF028F69AF300730317 /* LaunchScreen.storyboard in Resources */,
 				AD62DCC628F6A09500730317 /* TitleCollectionViewCell.xib in Resources */,
+				AD1567612930E6F50085C098 /* Oswald-Bold.ttf in Resources */,
 				AD95D6D8290CFB5800652CFF /* ScheduledMatchCollectionViewCell.xib in Resources */,
+				AD1567562930DF250085C098 /* SoonTableViewCell.xib in Resources */,
 				AD62DD7028F6A1D500730317 /* prize.json in Resources */,
 				AD62DC9C28F6A09500730317 /* HeighlightsTableViewCell.xib in Resources */,
 				AD62DCB328F6A09500730317 /* EventsAwayTableViewCell.xib in Resources */,
@@ -2410,6 +2402,7 @@
 				AD8B261A2918D8FB004CB036 /* KickOff.storyboard in Resources */,
 				ADE12B02290A76CA008D8D8D /* LoaderCollectionViewCell.xib in Resources */,
 				AD62DC9728F6A09500730317 /* SideMenuTableViewCell.xib in Resources */,
+				AD15675F2930E6F50085C098 /* Oswald-Regular.ttf in Resources */,
 				AD62DCBE28F6A09500730317 /* RankCollectionViewCell.xib in Resources */,
 				AD62DCA128F6A09500730317 /* AnalysisOddsTableViewCell.xib in Resources */,
 				AD62DCB528F6A09500730317 /* EventTechnicHeaderTableViewCell.xib in Resources */,
@@ -2662,7 +2655,6 @@
 				AD62DCA628F6A09500730317 /* AnalysisHeaderTableViewCell.swift in Sources */,
 				AD62DD6128F6A09500730317 /* Images.swift in Sources */,
 				AD62DD4A28F6A09500730317 /* AuthenticationAPI.swift in Sources */,
-				AD7AE7FB291E3A1A0096D9BE /* ProfileViewController.swift in Sources */,
 				AD62DD1528F6A09500730317 /* TeamStandingsResponse.swift in Sources */,
 				AD62DD3628F6A09500730317 /* SearchViewController.swift in Sources */,
 				AD62DCD228F6A09500730317 /* HighlightsCollectionViewCell.swift in Sources */,
@@ -3086,10 +3078,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BCHQRXX4ZR;
+				DEVELOPMENT_TEAM = YKTQ3L2SLX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scoreo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Titan Sports";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fly Sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -3102,10 +3094,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.titan.sports.lineups;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fly.sports.live;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TitanSportsDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = FlySportsDistribution;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -3121,10 +3113,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BCHQRXX4ZR;
+				DEVELOPMENT_TEAM = YKTQ3L2SLX;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scoreo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Titan Sports";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fly Sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -3137,10 +3129,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.titan.sports.lineups;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fly.sports.live;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TitanSportsDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = FlySportsDistribution;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

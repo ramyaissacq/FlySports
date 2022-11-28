@@ -66,6 +66,8 @@ struct MatchList {
 	let location: String?
 	let weather: String?
 	let explain: String?
+    let animateURLEn: String?
+    let animateURLCn: String?
 
 	init(_ json: JSON) {
 		matchId = json["matchId"].intValue
@@ -125,6 +127,8 @@ struct MatchList {
 		location = json["location"].stringValue
 		weather = json["weather"].stringValue
 		explain = json["explain"].stringValue
+        animateURLEn = json["animateURLEn"].stringValue
+        animateURLCn = json["animateURLCn"].stringValue
 	}
     
     init(obj:RecentMatchList?){
@@ -240,6 +244,8 @@ struct MatchList {
         location = obj?.locationEn
         weather = obj?.weatherEn
         explain = obj?.explainEn
+        animateURLEn = ""
+        animateURLCn = ""
     }
     
     

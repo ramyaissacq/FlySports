@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance.largeTitleTextAttributes = [NSAttributedString.Key.paragraphStyle : style]
     }
     
-    func setNavBarColor(color:UIColor = Colors.backgroundColor())
+    func setNavBarColor(color:UIColor = Colors.newRedColor())
     {
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.removeBottomLine()
@@ -51,10 +51,10 @@ class BaseViewController: UIViewController {
     }
     
     func getHeaderLabel(title:String) -> UILabel{
-        let w = title.width(forHeight: 25, font: UIFont(name: "Prompt-Bold", size: 23)!)
+        let w = title.width(forHeight: 25, font: UIFont(name: "Oswald-Bold", size: 23)!)
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: w, height: 20))
         label.text = title
-        label.font = UIFont(name: "Prompt-Bold", size: 23)
+        label.font = UIFont(name: "Oswald-Bold", size: 23)
         label.textColor = .white
         return label
     }
@@ -62,10 +62,10 @@ class BaseViewController: UIViewController {
    
    
     func getGradientHeaderLabel(title:String) -> UILabel{
-        let w = title.width(forHeight: 25, font: UIFont(name: "Prompt-Bold", size: 23)!)
+        let w = title.width(forHeight: 25, font: UIFont(name: "Oswald-Bold", size: 23)!)
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: w, height: 20))
         label.text = title
-        label.font = UIFont(name: "Prompt-Bold", size: 23)
+        label.font = UIFont(name: "Oswald-Bold", size: 23)
         let gradient = label.getGradientLayer(bounds: label.bounds)
         label.textColor = label.gradientColor(bounds: label.bounds, gradientLayer: gradient)
         return label

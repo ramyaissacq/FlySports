@@ -66,16 +66,16 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             openVC(storyBoard: "SideMenu", identifier: "LanguageViewController")
         case 1:
             
-            Utility.openUrl(url: URL(string: "https://titansports3.wordpress.com/2022/11/23/privacy-policy/")!)
+            Utility.openUrl(url: URL(string: "https://flysports3.wordpress.com/")!)
             //ScorePro
         case 2:
-            Utility.shareAction(text: "Install Titan Sports from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
+            Utility.shareAction(text: "Install Fly Sports from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
             
         case 3:
             sendEmail()
             
         case 4:
-            Utility.rateApp(id: "6444676857")
+            Utility.rateApp(id: "6444735888")
             
             
         default:

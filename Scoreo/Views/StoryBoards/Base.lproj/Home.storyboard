@@ -313,7 +313,7 @@
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdd-JJ-wbz">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -321,7 +321,7 @@
                             </wkWebView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uTu-VF-Jsh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backColor"/>
                         <constraints>
                             <constraint firstItem="sdd-JJ-wbz" firstAttribute="bottom" secondItem="uTu-VF-Jsh" secondAttribute="bottom" id="55x-Mb-mhs"/>
                             <constraint firstItem="sdd-JJ-wbz" firstAttribute="top" secondItem="uTu-VF-Jsh" secondAttribute="top" id="IYZ-Fq-ypt"/>
@@ -697,7 +697,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Qd-YL-Sqr">
                                 <rect key="frame" x="5" y="5" width="404" height="611.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="2Y4-d8-QqB" id="FJE-Dh-5d7"/>
                                     <outlet property="delegate" destination="2Y4-d8-QqB" id="F0H-9Y-zPm"/>
@@ -730,7 +730,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bTs-Jz-V9q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backColor"/>
                         <constraints>
                             <constraint firstItem="6Qd-YL-Sqr" firstAttribute="top" secondItem="d3w-oH-tmv" secondAttribute="top" constant="5" id="0cJ-5X-PK2"/>
                             <constraint firstItem="bTs-Jz-V9q" firstAttribute="trailing" secondItem="k2I-fh-wiC" secondAttribute="trailing" id="1fT-er-hf5"/>
@@ -1348,28 +1348,25 @@
             <point key="canvasLocation" x="3257.971014492754" y="-107.47767857142857"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="FD4-fB-H2b"/>
-    </designables>
     <resources>
-        <image name="dropdown" width="16" height="16"/>
-        <image name="launch" width="1125" height="2460"/>
+        <image name="dropdown" width="12.5" height="7.5"/>
+        <image name="launch" width="1125" height="2436"/>
         <image name="noData" width="433" height="278"/>
         <image name="sport" width="58" height="58"/>
         <namedColor name="AccentColor">
-            <color red="0.54117647058823526" green="0.89411764705882357" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.25490196078431371" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backColor">
-            <color red="0.16862745098039217" green="0.19215686274509805" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="black1">
             <color red="0.2196078431372549" green="0.24705882352941178" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray1">
-            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray2">
-            <color red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="gray3">
             <color red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
