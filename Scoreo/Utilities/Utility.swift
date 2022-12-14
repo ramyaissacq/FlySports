@@ -483,4 +483,16 @@ class Utility: NSObject {
         }
     }
     
+    class func getSettingsDateDiff() -> Int{
+        let launchDate = AppPreferences.getLaunchDate()
+        if launchDate.count > 0{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = Utility.dateFormat.ddMMyyyy.rawValue
+            let dt1 = dateFormatter.date(from: launchDate) ?? Date()
+           return Calendar.current.dateComponents([.day], from: dt1, to: Date()).day ?? 0
+        }
+        return 0
+    }
+            
+    
 }

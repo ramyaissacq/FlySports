@@ -15,8 +15,24 @@ class AppPreferences {
         case IsFirstRun = "IsFirstRun"
         case popupFrequency = "popupFrequency"
         case mapData = "mapData"
-         case isSearched = "isSearched"
+        case isSearched = "isSearched"
+        case launchDate = "launchDate"
         
+        
+    }
+    
+    class func setLaunchDate(date: String)
+    {
+        let userDefaults = UserDefaults.standard
+        userDefaults.setValue(date, forKey: Keys.launchDate.rawValue)
+    }
+    
+    class func getLaunchDate() -> String
+    {
+        let userDefaults = UserDefaults.standard
+        let value = userDefaults.string(forKey: Keys.launchDate.rawValue)
+        
+        return value ?? ""
         
     }
     

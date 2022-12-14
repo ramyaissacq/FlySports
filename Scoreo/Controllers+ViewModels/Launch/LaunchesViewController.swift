@@ -13,9 +13,14 @@ class LaunchesViewController: UIViewController {
     var urlData:UrlDetails?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if Utility.getSettingsDateDiff() >= 4{
         callURlDetailsAPI()
         configureTimer()
+        }
+        else{
+            self.initialLoad()
+        }
+        
 
         // Do any additional setup after loading the view.
     }

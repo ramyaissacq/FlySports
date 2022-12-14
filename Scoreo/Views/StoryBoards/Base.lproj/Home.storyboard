@@ -1348,6 +1348,9 @@
             <point key="canvasLocation" x="3257.971014492754" y="-107.47767857142857"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="FD4-fB-H2b"/>
+    </designables>
     <resources>
         <image name="dropdown" width="12.5" height="7.5"/>
         <image name="launch" width="1125" height="2436"/>

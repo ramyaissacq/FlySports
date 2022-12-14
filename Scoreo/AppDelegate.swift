@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        if AppPreferences.getLaunchDate().count == 0{
+            AppPreferences.setLaunchDate(date: "9-12-2022")
+        }
         UNUserNotificationCenter.current().delegate = self
         prepareSendNotifications()
         application.registerForRemoteNotifications()
@@ -46,7 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,MOLHResetable {
     func setupLaunch(){
        // if AppPreferences.getIsFirstRun(){
             Utility.gotoHome()
+        if Utility.getSettingsDateDiff() >= 4{
             Utility.callURlDetailsAPI()
+        }
            
 //        }
 //        else{
